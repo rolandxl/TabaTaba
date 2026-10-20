@@ -1,0 +1,32 @@
+{
+  "name": "tabataba",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "PWA для хранения и исполнения песен с аккордами",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vite",
+    "dev:open": "vite --port 5173 --strictPort --open",
+    "dev:lan": "vite --host --port 5173 --strictPort --open",
+    "build": "npm run check && vite build",
+    "preview": "vite preview",
+    "preview:open": "vite preview --host 127.0.0.1 --port 4173 --strictPort --open",
+    "preview:adb": "vite preview --host 127.0.0.1 --port 4173 --strictPort",
+    "start:pwa": "npm run build && npm run preview:open",
+    "check": "tsc --noEmit",
+    "test": "vitest run",
+    "icons": "node scripts/icons.mjs"
+  },
+  "dependencies": {
+    "dexie": "^4.4.6"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "sharp": "^0.35.5",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.4",
+    "vite-plugin-pwa": "^2.0.0",
+    "vitest": "^5.0.5"
+  }
+}

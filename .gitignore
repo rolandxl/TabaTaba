@@ -1,0 +1,10 @@
+node_modules
+dist
+.DS_Store
+*.local
+.vite
+coverage
+adb-path.txt
+mytabs-tabataba-backup.json
+mytabs-tabataba-backup-chords.json
+mytabs-chords-report.md
